@@ -71,9 +71,9 @@ public class GetUsersFromLDAP {
 	         ctx = new InitialLdapContext(env, null);
 	         SearchControls searchCtls = new SearchControls();
 	           //Addign New SearchControl to print Specific result :   
-	         Properties prop = readPropertiesFile("C:\\Users\\msingh\\Desktop\\simeio@training\\credentials.properties");	
+	         Properties prop = readPropertiesFile("C:\\Users\\msingh\\Desktop\\credentials.properties");	
 	        
-	         String sourceFile = "C:\\Users\\msingh\\Desktop\\simeio@training\\afsc.csv" ;
+	         String sourceFile = "C:\\Users\\msingh\\Desktop\\exe.csv" ;
 	         List<String> attrList = getUsersFromFile(sourceFile);
 	         List<String> userList = getUsersFromFile(sourceFile);
 	         System.out.println("UserList" + userList);
