@@ -29,7 +29,7 @@ public class GetUsersFromLDAP {
 
 	public static void main(String args[]) throws IOException
 	{
-		Properties prop = readPropertiesFile("C:\\Users\\msingh\\Desktop\\simeio@training\\credentials.properties");		
+		Properties prop = readPropertiesFile("C:\\Users\\msingh\\Desktop\\credentials.properties");		
 		try {
 				 String username= prop.getProperty("username");
 				 String password = prop.getProperty("password");
